@@ -1,0 +1,11 @@
+* {
+    border-radius: 0px !important;
+}
+
+button {
+    height: 100%;
+}
+
+.panel {
+    padding: 2%;
+}
