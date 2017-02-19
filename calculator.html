@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./calculator.css">
+    <script src="./calculator.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
@@ -25,35 +26,35 @@
             <div class="col-sm-8">
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">7</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(7)" >7</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">8</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(8)">8</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">9</button>
-                    </div>
-                </div>
-                <div class="btn-group btn-group-justified btn-group-lg">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">4</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">5</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">6</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(9)">9</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">1</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(4)">4</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">2</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(5)">5</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">3</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(6)">6</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified btn-group-lg">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar(1)">1</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar(2)">2</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar(3)">3</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
@@ -65,23 +66,31 @@
             <div class="col-sm-4">
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">+</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(' + ')">+</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">-</button>
-                    </div>
-                </div>
-                <div class="btn-group btn-group-justified btn-group-lg">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">*</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary">/</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(' - ')">-</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary">=</button>
+                        <button type="button" class="btn btn-primary" onclick="addChar(' * ')">*</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar(' / ')">/</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified btn-group-lg">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar('(')">(</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="addChar(')')">)</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified btn-group-lg">
+                    <div class="btn-group">
+                        <button type="button" id="equals-btn" class="btn btn-primary" onclick="calculate()">=</button>
                     </div>
                 </div>
             </div>
