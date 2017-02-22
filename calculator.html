@@ -26,43 +26,43 @@
             <div class="col-sm-8">
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(7)" >7</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(7)" >7</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(8)">8</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(8)">8</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(9)">9</button>
-                    </div>
-                </div>
-                <div class="btn-group btn-group-justified btn-group-lg">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(4)">4</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(5)">5</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(6)">6</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(9)">9</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(1)">1</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(4)">4</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(2)">2</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(5)">5</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(3)">3</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(6)">6</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="del()">Del</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(1)">1</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(0)">0</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(2)">2</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="takeInput(3)">3</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified btn-group-lg">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="takeInput(-1)">Del</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="takeInput(0)">0</button>
                     </div>
                     <div class="btn-group">
                         <button type="button" id="equals-btn" class="btn btn-primary" onclick="calculate()">=</button>
@@ -72,34 +72,34 @@
             <div class="col-sm-4">
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(' + ')">+</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(10)">&#x2b;</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(' - ')">-</button>
-                    </div>
-                </div>
-                <div class="btn-group btn-group-justified btn-group-lg">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(' * ')">*</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(' / ')">/</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(11)">&#x2212;</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar('(')">(</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(12)">&#xd7;</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar(')')">)</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(13)">&#xf7;</button>
                     </div>
                 </div>
                 <div class="btn-group btn-group-justified btn-group-lg">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="addChar('**')">**</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(14)">(</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+                        <button type="button" class="btn btn-primary" onclick="takeInput(15)">)</button>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified btn-group-lg">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="takeInput(16)">**</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" onclick="takeInput(-2)">Reset</button>
                     </div>
                 </div>
             </div>
