@@ -1,31 +1,34 @@
-var evalArray = [];
+var inputArray = [];
+var lastAnswer = null;
 
 function takeInput(element) {
     if (element === -2) {
-        evalArray = [];
+        inputArray = [];
     } else if (element == -1) {
-        evalArray.pop();
+        inputArray.pop();
     } else {
-        evalArray.push(element);
+        inputArray.push(element);
     }
     updateDisplay();
 }
 
 function updateDisplay() {
     var displayString = '';
-    for (var i = 0; i < evalArray.length; i++) {
-        var code = evalArray[i];
-        if (code < 10) {
-            displayString += code;
+    var element;
+    for (var i = 0; i < inputArray.length; i++) {
+        element = inputArray[i];
+        if (element < 10) {
+            displayString += element;
         } else {
-            switch (code) {
+            switch (element) {
                 case 10: displayString += ' + '; break;
                 case 11: displayString += ' - '; break;
-                case 12: displayString += ' * '; break;
-                case 13: displayString += ' / '; break;
+                case 12: displayString += ' \u00D7 '; break;
+                case 13: displayString += ' \u00F7 '; break;
                 case 14: displayString += '('; break;
                 case 15: displayString += ')'; break;
                 case 16: displayString += '^'; break;
+                case 17: displayString += lastAnswer; break;
                 default: alert("error! code not recognized"); break;
             }
         }
@@ -35,8 +38,8 @@ function updateDisplay() {
 
 function calculate() {
     var mathString = '';
-    for (var i = 0; i < evalArray.length; i++) {
-        var code = evalArray[i];
+    for (var i = 0; i < inputArray.length; i++) {
+        var code = inputArray[i];
         if (code < 10) {
             mathString += code;
         } else {
@@ -54,5 +57,6 @@ function calculate() {
     }
     var result = eval(mathString);
     document.getElementById("usr").value = result;
-    evalArray = [];
+    lastAnswer = result;
+    inputArray = [];
 }
