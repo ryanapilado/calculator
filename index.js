@@ -6,9 +6,8 @@ app.engine('.html', require('ejs').__express);
 app.set('views', './frontend');
 app.set('view engine', 'html');
 
-
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.render("calculator");
 })
 
 app.listen(process.env.PORT || 3000, function () {
