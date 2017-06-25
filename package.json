@@ -2,9 +2,10 @@
   "name": "calculator",
   "version": "1.0.0",
   "description": "Simple calculator web application to learn/practice web technologies.",
-  "main": "calculator.js",
+  "main": "index.js",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.3"
   },
   "devDependencies": {},
   "scripts": {
